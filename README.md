@@ -55,4 +55,6 @@ No specialist exam service, Hindi-specific qualification, overseas teaching regi
 
 ## Source control
 
-This directory is its own Git repository. GitHub API access was blocked during preparation, so remote creation/publication must not be assumed. The existing EnglishWithNeelam repository and its local changes remain independent. Create a private repository named `HindiWithNeelam` in the intended GitHub account, add its actual remote, then push the initial commit. No force pushes are needed.
+Repository: https://github.com/Aviicoder/HindiWithNeelam — production branch `main`.
+
+This project was pushed through the platform Git connection after the owner created the empty repository. GitHub API access remains restricted in the development environment; this does not prevent the verified Git push. EnglishWithNeelam remains a separate project. Cloudflare Pages deployment is still pending; use the deployment guide to connect this repository.

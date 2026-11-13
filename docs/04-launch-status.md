@@ -13,7 +13,7 @@
 
 ## Not represented as completed
 
-- No public GitHub repository has been created: GitHub API access is blocked by the environment's currently enforced network policy. A local Git repository and source archive are supplied.
+- GitHub push is complete: https://github.com/Aviicoder/HindiWithNeelam, branch `main`. The owner created the repository; the project was pushed through the existing Git connection. Repository visibility and GitHub Actions results have not been verified through the restricted API.
 - No domain has been registered or availability verified.
 - No Cloudflare project has been deployed. The supplied preview build is intentionally noindex. Set the verified SITE_URL and rebuild for public indexing.
 - US population figures have not been independently verified; source year/methodology are absent. Australian city rankings remain provisional without a comparable dataset. Public pages do not repeat unsupported counts.
