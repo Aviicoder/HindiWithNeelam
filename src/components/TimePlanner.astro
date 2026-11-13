@@ -1,0 +1,18 @@
+---
+import { zones } from '../lib/time';
+---
+<section class="tool-panel" aria-labelledby="planner-title"><p class="eyebrow">A DATE-AWARE TIME CHECK</p><h2 id="planner-title">Your local time → India time</h2><p class="form-hint">Choose a possible lesson time in your city. This tool checks the clock, not availability.</p>
+<form id="time-form"><div class="field"><label for="zone">Your city / time zone</label><select id="zone" name="zone">{zones.map(([city,zone])=><option value={zone}>{city}</option>)}</select></div><div class="field-grid"><div class="field"><label for="date">Your local date</label><input type="date" id="date" name="date" required/></div><div class="field"><label for="time">Your local time</label><input type="time" id="time" name="time" value="08:00" required/></div></div><button class="button" type="submit">Check India time <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.5"/></svg></span></button></form>
+<div id="time-result" class="tool-result" role="status" aria-live="polite"></div>
+<noscript><p>Enable JavaScript for the converter, or <a class="text-link" href="/contact/">send Neelam your city, date and preferred time</a>.</p></noscript></section>
+<script>
+import {localToInstants,indiaTime} from '../lib/time';
+const form=document.querySelector<HTMLFormElement>('#time-form');
+const result=document.querySelector<HTMLElement>('#time-result');
+const date=document.querySelector<HTMLInputElement>('#date');
+const zone=document.querySelector<HTMLSelectElement>('#zone');
+if(date){const now=new Date();date.value=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;}
+const selected=new URLSearchParams(location.search).get('zone');
+if(zone&&selected&&[...zone.options].some(o=>o.value===selected))zone.value=selected;
+form?.addEventListener('submit',event=>{event.preventDefault();if(!result||!form)return;const data=new FormData(form);const matches=localToInstants(`${data.get('date')}T${data.get('time')}`,String(data.get('zone')));result.textContent=matches.length===0?'That local time does not exist on this date, or the date is invalid. A daylight saving change may skip it. Please choose another time.':matches.length>1?`This time occurs twice when the clocks go back. It could be ${matches.map(indiaTime).join(' or ')} in India. Choose a time outside the repeated hour, or specify the offset in your enquiry.`:`In India: ${indiaTime(matches[0])}. Please confirm lesson availability with Neelam.`;});
+</script>

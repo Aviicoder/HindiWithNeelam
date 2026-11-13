@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {localToInstants,indiaTime,enquiryText} from '../src/lib/time.ts';
+const utc=(local,zone)=>localToInstants(local,zone).map(d=>d.toISOString());
+test('New York winter and summer are an hour apart',()=>{assert.deepEqual(utc('2026-01-17T08:00','America/New_York'),['2026-01-17T13:00:00.000Z']);assert.deepEqual(utc('2026-07-18T08:00','America/New_York'),['2026-07-18T12:00:00.000Z']);});
+test('US daylight saving gap is rejected rather than silently rescheduled',()=>{assert.deepEqual(utc('2026-03-08T02:30','America/New_York'),[]);});
+test('US repeated hour returns both instants',()=>{assert.deepEqual(utc('2026-11-01T01:30','America/New_York'),['2026-11-01T05:30:00.000Z','2026-11-01T06:30:00.000Z']);});
+test('Australian seasonal difference and Brisbane stable clock',()=>{assert.deepEqual(utc('2026-01-17T16:00','Australia/Sydney'),['2026-01-17T05:00:00.000Z']);assert.deepEqual(utc('2026-07-18T16:00','Australia/Sydney'),['2026-07-18T06:00:00.000Z']);assert.deepEqual(utc('2026-01-17T16:00','Australia/Brisbane'),['2026-01-17T06:00:00.000Z']);});
+test('Adelaide half-hour offsets are preserved',()=>{assert.deepEqual(utc('2026-01-17T16:00','Australia/Adelaide'),['2026-01-17T05:30:00.000Z']);assert.deepEqual(utc('2026-07-18T16:00','Australia/Adelaide'),['2026-07-18T06:30:00.000Z']);});
+test('Pacific evening rolls into the next day in India',()=>{assert.match(indiaTime(localToInstants('2026-01-17T20:00','America/Los_Angeles')[0]),/18 Jan,? 2026/);});
+test('invalid calendar date is rejected',()=>{assert.deepEqual(utc('2026-02-30T08:00','America/New_York'),[]);assert.deepEqual(utc('not-a-date','America/New_York'),[]);});
+test('enquiry preserves typed characters and does not claim a booking',()=>{const text=enquiryText({name:'A & B',city:'Sydney',goal:'Reading',notes:'Questions? / + हिन्दी'});assert.ok(text.includes('A & B'));assert.ok(text.includes('Questions? / + हिन्दी'));assert.ok(text.includes('fees and available times'));assert.equal(decodeURIComponent(encodeURIComponent(text)),text);});

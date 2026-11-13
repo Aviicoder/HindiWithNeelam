@@ -1,0 +1,87 @@
+country,cluster,keyword,intent,priority,target_url,status,notes
+Australia,Local city + near me,hindi classes melbourne,Commercial,P1,/australia/melbourne/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Local city + near me,hindi tutor melbourne,Commercial,P1,/australia/melbourne/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Local city + near me,hindi tuition melbourne,Commercial,P1,/australia/melbourne/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Local city + near me,hindi school melbourne,Commercial,P2,/australia/melbourne/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Local city + near me,hindi classes sydney,Commercial,P1,/australia/sydney/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Local city + near me,hindi tutor sydney,Commercial,P1,/australia/sydney/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Local city + near me,hindi language school sydney,Commercial,P2,/australia/sydney/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Local city + near me,hindi classes brisbane,Commercial,P2,/australia/,launch,City hub section at launch; no thin duplicate page.
+Australia,Local city + near me,hindi classes perth,Commercial,P2,/australia/,launch,City hub section at launch; no thin duplicate page.
+Australia,Local city + near me,hindi classes adelaide,Commercial,P3,/australia/,launch,City hub section at launch; no thin duplicate page.
+Australia,Local city + near me,hindi classes canberra,Commercial,P3,/australia/,launch,City hub section at launch; no thin duplicate page.
+Australia,Local city + near me,hindi classes near me,Commercial,P1,/australia/,launch,Explicit online delivery; do not imply a local school or physical address.
+Australia,Local city + near me,hindi tutor near me,Commercial,P1,/australia/,launch,Explicit online delivery; do not imply a local school or physical address.
+Australia,Local city + near me,hindi classes online australia,Commercial,P1,/australia/,launch,Explicit online delivery; do not imply a local school or physical address.
+Australia,School exam (VCE/HSC),vce hindi,Informational,P1,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),vce hindi tutor,Commercial,P1,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),vce hindi study design,Informational,P2,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),vce hindi past exams,Informational,P2,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),vce hindi units 1 and 2,Informational,P3,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),vce hindi oral,Informational,P2,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),hsc hindi,Informational,P1,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),hsc hindi continuers,Informational,P1,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),hsc hindi tutor,Commercial,P1,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),hsc hindi past papers,Informational,P2,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+Australia,School exam (VCE/HSC),hindi heritage speakers course,Commercial,P2,/heritage-hindi/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),hindi classes for kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),hindi lessons for kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),hindi for kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),learn hindi for kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),hindi reading and writing for kids,Commercial,P1,/hindi-reading-writing/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),hindi alphabet for kids,Commercial,P1,/resources/hindi-alphabet/,launch,"Alphabet reference covers consonant groups, vowels, matras and common additional forms; teacher review pending."
+Australia,Diaspora parents (kids),hindi for nri kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),hindi classes for kids near me,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Diaspora parents (kids),online hindi classes for kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Adults / beginners,hindi classes for adults,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Adults / beginners,learn hindi for beginners,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Adults / beginners,hindi speaking course,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Adults / beginners,conversational hindi classes,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Adults / beginners,learn to speak hindi,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+Australia,Adults / beginners,hindi course online,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Local + near me,hindi classes near me,Commercial,P1,/usa/,launch,Explicit online delivery; do not imply a local school or physical address.
+United States,Local + near me,hindi tutor near me,Commercial,P1,/usa/,launch,Explicit online delivery; do not imply a local school or physical address.
+United States,Local + near me,hindi teacher near me,Commercial,P2,/usa/,launch,Explicit online delivery; do not imply a local school or physical address.
+United States,City,hindi classes in new jersey,Commercial,P2,/usa/new-york-new-jersey/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,City,hindi classes bay area,Commercial,P2,/usa/san-francisco-bay-area/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,City,hindi classes chicago,Commercial,P3,/usa/chicago/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,City,hindi classes houston,Commercial,P3,/usa/,launch,City hub section at launch.
+United States,City,hindi classes dallas,Commercial,P3,/usa/dallas-fort-worth/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,City,hindi classes atlanta,Commercial,P3,/usa/,launch,City hub section at launch.
+United States,Kids,hindi classes for kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Kids,online hindi classes for kids,Commercial,P1,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Kids,hindi for kids,Commercial,P2,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Kids,learn hindi for kids,Commercial,P2,/hindi-for-kids/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Kids,hindi alphabet for kids,Commercial,P3,/resources/hindi-alphabet/,launch,"Alphabet reference covers consonant groups, vowels, matras and common additional forms; teacher review pending."
+United States,Adults,learn hindi,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Adults,hindi classes online,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Adults,hindi lessons online,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Adults,learn hindi online,Commercial,P2,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Adults,hindi for beginners,Commercial,P3,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Adults,spoken hindi classes,Commercial,P3,/hindi-for-beginners/,launch,Consolidated by search intent; no measured volume or KD supplied.
+United States,Institutional,seal of biliteracy hindi,Commercial,P3,,deferred,Confirm specialist expertise and service before publishing exam-intent pages.
+United States,Institutional,hindi language school near me,Commercial,P3,/usa/,launch,Explicit online delivery; do not imply a local school or physical address.
+United Kingdom,Local city,hindi classes london,Commercial,P1,,out of scope,User requested USA and Australia only.
+United Kingdom,Local city,hindi tutor london,Commercial,P1,,out of scope,User requested USA and Australia only.
+United Kingdom,Local city,hindi classes near me,Commercial,P2,,out of scope,User requested USA and Australia only.
+United Kingdom,Local city,hindi classes birmingham,Commercial,P2,,out of scope,User requested USA and Australia only.
+United Kingdom,Local city,hindi classes leicester,Commercial,P3,,out of scope,User requested USA and Australia only.
+United Kingdom,Local city,hindi classes manchester,Commercial,P3,,out of scope,User requested USA and Australia only.
+United Kingdom,Exam,igcse hindi,Commercial,P1,,out of scope,User requested USA and Australia only.
+United Kingdom,Exam,igcse hindi 0549,Commercial,P2,,out of scope,User requested USA and Australia only.
+United Kingdom,Exam,igcse hindi past papers,Commercial,P2,,out of scope,User requested USA and Australia only.
+United Kingdom,Exam,gcse hindi,Commercial,P2,,out of scope,User requested USA and Australia only.
+United Kingdom,Kids,hindi classes for kids,Commercial,P2,,out of scope,User requested USA and Australia only.
+United Kingdom,Adults,learn hindi online uk,Commercial,P3,,out of scope,User requested USA and Australia only.
+Canada,Local city,hindi classes toronto,Commercial,P2,,out of scope,User requested USA and Australia only.
+Canada,Local city,hindi classes brampton,Commercial,P2,,out of scope,User requested USA and Australia only.
+Canada,Local city,hindi classes vancouver,Commercial,P2,,out of scope,User requested USA and Australia only.
+Canada,Local city,hindi classes calgary,Commercial,P3,,out of scope,User requested USA and Australia only.
+Canada,Local city,hindi tutor near me,Commercial,P3,,out of scope,User requested USA and Australia only.
+Canada,Kids,hindi classes for kids,Commercial,P3,,out of scope,User requested USA and Australia only.
+New Zealand,Local city,hindi classes auckland,Commercial,P2,,out of scope,User requested USA and Australia only.
+New Zealand,Local city,hindi tutor auckland,Commercial,P2,,out of scope,User requested USA and Australia only.
+New Zealand,Local city,hindi classes wellington,Commercial,P3,,out of scope,User requested USA and Australia only.
+New Zealand,Local city,hindi classes near me,Commercial,P3,,out of scope,User requested USA and Australia only.
+Ireland,Local city,hindi classes dublin,Commercial,P3,,out of scope,User requested USA and Australia only.
+Ireland,Local city,hindi tutor dublin,Commercial,P3,,out of scope,User requested USA and Australia only.

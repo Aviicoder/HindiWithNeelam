@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+interface Props { title:string; description:string; locale?:string; crumbs?:{name:string;path:string}[]; service?:boolean; noindex?:boolean }
+const {title,description,locale='en',crumbs=[],service=false,noindex=false}=Astro.props;
+const site=Astro.site; const canonical=site ? new URL(Astro.url.pathname,site).href : undefined;
+const indexed=Boolean(site)&&!noindex;
+const id=(path:string)=>site?new URL(path,site).href:path;
+const graph:Record<string,unknown>[]=[
+ {'@type':'Organization','@id':id('/#organization'),name:'Hindi with Neelam',url:id('/'),email:'learnwithneelamy@gmail.com',telephone:'+919971055356',founder:{'@id':id('/about/#neelam')},areaServed:[{'@type':'Country',name:'United States'},{'@type':'Country',name:'Australia'}]},
+ {'@type':'Person','@id':id('/about/#neelam'),name:'Neelam',url:id('/about/'),jobTitle:'Teacher'},
+ {'@type':'WebSite','@id':id('/#website'),name:'Hindi with Neelam',url:id('/'),publisher:{'@id':id('/#organization')}},
+ {'@type':'WebPage','@id':id(Astro.url.pathname+'#page'),name:title,description,url:canonical??Astro.url.pathname,isPartOf:{'@id':id('/#website')},inLanguage:locale}
+];
+if(crumbs.length) graph.push({'@type':'BreadcrumbList',itemListElement:[{name:'Home',path:'/'},...crumbs].map((c,i)=>({'@type':'ListItem',position:i+1,name:c.name,item:id(c.path)}))});
+if(service) graph.push({'@type':'Service',name:title.split('|')[0].trim(),serviceType:'Online Hindi lessons',provider:{'@id':id('/#organization')},areaServed:[{'@type':'Country',name:'United States'},{'@type':'Country',name:'Australia'}],availableChannel:{'@type':'ServiceChannel',serviceUrl:id('/contact/')}});
+const nav=[['Learning paths','/hindi-for-kids/'],['USA','/usa/'],['Australia','/australia/'],['Meet Neelam','/about/'],['Resources','/resources/']];
+---
+<!doctype html>
+<html lang={locale}>
+<head>
+ <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <title>{title}</title><meta name="description" content={description}/>
+ <meta name="robots" content={indexed?'index, follow':'noindex, nofollow'}/>
+ {canonical&&<link rel="canonical" href={canonical}/>}
+ <meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:site_name" content="Hindi with Neelam"/>
+ {canonical&&<meta property="og:url" content={canonical}/>}
+ {site&&<meta property="og:image" content={new URL('/images/neelam-portrait.jpg',site).href}/>}
+ <meta name="twitter:card" content="summary"/><meta name="theme-color" content="#fcf8ef"/>
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+ <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}/>
+</head>
+<body>
+ <a class="skip-link" href="#main">Skip to content</a>
+ <div class="announcement">A little Hindi. A lifelong connection. <span>Online lessons for families in the USA & Australia</span></div>
+ <header class="site-header"><div class="shell header-inner">
+ <a class="brand" href="/" aria-label="Hindi with Neelam home"><span class="brand-mark" lang="hi">अ</span><span>hindi<span class="brand-small">with Neelam</span></span></a>
+ <nav class="desktop-nav" aria-label="Main navigation">{nav.map(([label,url])=><a href={url} aria-current={Astro.url.pathname===url?'page':undefined}>{label}</a>)}</nav>
+ <a class="button button-small header-cta" href="/contact/">Let’s talk Hindi <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
+ <details class="mobile-nav"><summary>Menu <span aria-hidden="true">☰</span></summary><nav aria-label="Mobile navigation">{nav.map(([label,url])=><a href={url}>{label}</a>)}<a href="/contact/">Enquire about lessons</a></nav></details>
+ </div></header>
+ <main id="main"><slot/></main>
+ <section class="closing-cta"><div class="shell closing-inner"><div><p class="eyebrow">ONE SMALL STEP, TOGETHER</p><h2>Let’s make room<br/>for a little <em>Hindi.</em></h2></div><div><p>Tell Neelam about your learner.<br/>Find a starting point that feels right.</p><a class="button button-light" href="/contact/">Start a conversation <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.5"/></svg></span></a><p class="micro">Online from India · Times and fees confirmed personally</p></div></div></section>
+ <footer class="footer"><div class="shell footer-grid"><div><a class="brand" href="/"><span class="brand-mark" lang="hi">अ</span><span>hindi<span class="brand-small">with Neelam</span></span></a><p>A language to learn.<br/>A connection to keep.</p><p class="micro">Based in Roorkee, India.<br/>Teaching online across borders.</p></div><div><h2>Find your path</h2><a href="/hindi-for-kids/">Hindi for children</a><a href="/heritage-hindi/">Heritage learners</a><a href="/hindi-for-beginners/">Beginners</a><a href="/hindi-reading-writing/">Reading & writing</a></div><div><h2>Learn from home</h2><a href="/usa/">Families in the USA</a><a href="/australia/">Families in Australia</a><a href="/time-zones/">Time-zone planner</a><a href="/resources/">Free resources</a></div><div><h2>A little about us</h2><a href="/about/">Meet Neelam</a><a href="/teaching-approach/">Teaching approach</a><a href="/editorial-policy/">Editorial policy</a><a href="/contact/">Get in touch</a></div></div><div class="shell footer-bottom"><span>© {new Date().getFullYear()} Hindi with Neelam</span><div><a href="/privacy/">Privacy</a><a href="/accessibility/">Accessibility</a><a href="mailto:learnwithneelamy@gmail.com">Email Neelam</a></div></div></footer>
+</body></html>

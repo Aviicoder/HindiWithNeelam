@@ -1,0 +1,87 @@
+Country,Cluster,Keyword,Intent,Funnel,Suggested page,Priority,Note
+Australia,Local city + near me,hindi classes melbourne,Commercial,Bottom,/hindi-classes-melbourne/,P1,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi tutor melbourne,Commercial,Bottom,/hindi-classes-melbourne/,P1,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi tuition melbourne,Commercial,Bottom,/hindi-classes-melbourne/,P1,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi school melbourne,Commercial,Bottom,/hindi-classes-melbourne/,P2,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi classes sydney,Commercial,Bottom,/hindi-classes-sydney/,P1,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi tutor sydney,Commercial,Bottom,/hindi-classes-sydney/,P1,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi language school sydney,Commercial,Bottom,/hindi-classes-sydney/,P2,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi classes brisbane,Commercial,Bottom,/hindi-classes-brisbane/,P2,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi classes perth,Commercial,Bottom,/hindi-classes-perth/,P2,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi classes adelaide,Commercial,Bottom,/hindi-classes-adelaide/,P3,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi classes canberra,Commercial,Bottom,/hindi-classes-canberra/,P3,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi classes near me,Commercial,Bottom,/hindi-classes-australia/,P1,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi tutor near me,Commercial,Bottom,/hindi-classes-australia/,P1,Geo modifier = highest buyer intent
+Australia,Local city + near me,hindi classes online australia,Commercial,Bottom,/online-hindi-classes-australia/,P1,Geo modifier = highest buyer intent
+Australia,School exam (VCE/HSC),vce hindi,Informational,Top,/vce-hindi-tutor/,P1,"Official VCE subject, very few specialist tutors"
+Australia,School exam (VCE/HSC),vce hindi tutor,Commercial,Bottom,/vce-hindi-tutor/,P1,Single most commercial keyword in the market
+Australia,School exam (VCE/HSC),vce hindi study design,Informational,Top,/vce-hindi-resources/,P2,Parents and students both search this
+Australia,School exam (VCE/HSC),vce hindi past exams,Informational,Top,/vce-hindi-resources/,P2,"Free resource, strong link magnet"
+Australia,School exam (VCE/HSC),vce hindi units 1 and 2,Informational,Top,/vce-hindi-resources/,P3,
+Australia,School exam (VCE/HSC),vce hindi oral,Informational,Top,/vce-hindi-resources/,P2,Oral exam is the pain point -> content hook
+Australia,School exam (VCE/HSC),hsc hindi,Informational,Top,/hsc-hindi-tutor/,P1,Hindi Continuers is an official NESA HSC subject
+Australia,School exam (VCE/HSC),hsc hindi continuers,Informational,Top,/hsc-hindi-tutor/,P1,Exact syllabus name students type
+Australia,School exam (VCE/HSC),hsc hindi tutor,Commercial,Bottom,/hsc-hindi-tutor/,P1,
+Australia,School exam (VCE/HSC),hsc hindi past papers,Informational,Top,/hsc-hindi-resources/,P2,
+Australia,School exam (VCE/HSC),hindi heritage speakers course,Commercial,Bottom,/hindi-for-heritage-speakers/,P2,VCE/HSC stream for home-background students
+Australia,Diaspora parents (kids),hindi classes for kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),hindi lessons for kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),hindi for kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),learn hindi for kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),hindi reading and writing for kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),hindi alphabet for kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),hindi for nri kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),hindi classes for kids near me,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Diaspora parents (kids),online hindi classes for kids,Commercial,Bottom,/hindi-for-kids/,P1,Biggest paying segment
+Australia,Adults / beginners,hindi classes for adults,Commercial,Middle,/learn-hindi-for-adults/,P2,
+Australia,Adults / beginners,learn hindi for beginners,Commercial,Middle,/learn-hindi-for-adults/,P2,
+Australia,Adults / beginners,hindi speaking course,Commercial,Middle,/learn-hindi-for-adults/,P2,
+Australia,Adults / beginners,conversational hindi classes,Commercial,Middle,/learn-hindi-for-adults/,P2,
+Australia,Adults / beginners,learn to speak hindi,Commercial,Middle,/learn-hindi-for-adults/,P2,
+Australia,Adults / beginners,hindi course online,Commercial,Middle,/learn-hindi-for-adults/,P2,
+United States,Local + near me,hindi classes near me,Commercial,Bottom,/hindi-classes-near-me/,P1,"High volume, geo-broad"
+United States,Local + near me,hindi tutor near me,Commercial,Bottom,/hindi-classes-near-me/,P1,
+United States,Local + near me,hindi teacher near me,Commercial,Bottom,/hindi-classes-near-me/,P2,
+United States,City,hindi classes in new jersey,Commercial,Bottom,/hindi-classes-new-jersey/,P2,Edison/Princeton corridor
+United States,City,hindi classes bay area,Commercial,Bottom,/hindi-classes-bay-area/,P2,
+United States,City,hindi classes chicago,Commercial,Bottom,/hindi-classes-chicago/,P3,
+United States,City,hindi classes houston,Commercial,Bottom,/hindi-classes-houston/,P3,
+United States,City,hindi classes dallas,Commercial,Bottom,/hindi-classes-dallas/,P3,
+United States,City,hindi classes atlanta,Commercial,Bottom,/hindi-classes-atlanta/,P3,
+United States,Kids,hindi classes for kids,Commercial,Bottom,/hindi-for-kids/,P1,
+United States,Kids,online hindi classes for kids,Commercial,Bottom,/hindi-for-kids/,P1,
+United States,Kids,hindi for kids,Commercial,Middle,/hindi-for-kids/,P2,
+United States,Kids,learn hindi for kids,Commercial,Middle,/hindi-for-kids/,P2,
+United States,Kids,hindi alphabet for kids,Commercial,Middle,/hindi-alphabet/,P3,
+United States,Adults,learn hindi,Commercial,Middle,/learn-hindi/,P2,"Head term, very competitive (India sites)"
+United States,Adults,hindi classes online,Commercial,Bottom,/online-hindi-classes/,P2,
+United States,Adults,hindi lessons online,Commercial,Middle,/online-hindi-classes/,P2,
+United States,Adults,learn hindi online,Commercial,Middle,/online-hindi-classes/,P2,
+United States,Adults,hindi for beginners,Commercial,Middle,/learn-hindi-for-beginners/,P3,
+United States,Adults,spoken hindi classes,Commercial,Bottom,/spoken-hindi/,P3,
+United States,Institutional,seal of biliteracy hindi,Commercial,Middle,/hindi-seal-of-biliteracy/,P3,"School-testing driven, low competition"
+United States,Institutional,hindi language school near me,Commercial,Bottom,/hindi-language-school/,P3,
+United Kingdom,Local city,hindi classes london,Commercial,Bottom,/hindi-classes-london/,P1,Largest Hindi-speaking pocket in the UK
+United Kingdom,Local city,hindi tutor london,Commercial,Bottom,/hindi-classes-london/,P1,
+United Kingdom,Local city,hindi classes near me,Commercial,Bottom,/hindi-classes-uk/,P2,
+United Kingdom,Local city,hindi classes birmingham,Commercial,Bottom,/hindi-classes-birmingham/,P2,
+United Kingdom,Local city,hindi classes leicester,Commercial,Bottom,/hindi-classes-leicester/,P3,
+United Kingdom,Local city,hindi classes manchester,Commercial,Bottom,/hindi-classes-manchester/,P3,
+United Kingdom,Exam,igcse hindi,Commercial,Bottom,/igcse-hindi-tutor/,P1,Cambridge 0549 Hindi as a Second Language
+United Kingdom,Exam,igcse hindi 0549,Commercial,Bottom,/igcse-hindi-tutor/,P2,Exact syllabus code = buyer
+United Kingdom,Exam,igcse hindi past papers,Commercial,Bottom,/igcse-hindi-resources/,P2,
+United Kingdom,Exam,gcse hindi,Commercial,Bottom,/gcse-hindi-tutor/,P2,
+United Kingdom,Kids,hindi classes for kids,Commercial,Bottom,/hindi-for-kids-uk/,P2,
+United Kingdom,Adults,learn hindi online uk,Commercial,Bottom,/online-hindi-classes-uk/,P3,
+Canada,Local city,hindi classes toronto,Commercial,Bottom,/hindi-classes-toronto/,P2,
+Canada,Local city,hindi classes brampton,Commercial,Bottom,/hindi-classes-brampton/,P2,
+Canada,Local city,hindi classes vancouver,Commercial,Bottom,/hindi-classes-vancouver/,P2,
+Canada,Local city,hindi classes calgary,Commercial,Bottom,/hindi-classes-calgary/,P3,
+Canada,Local city,hindi tutor near me,Commercial,Bottom,/hindi-classes-canada/,P3,
+Canada,Kids,hindi classes for kids,Commercial,Bottom,/hindi-for-kids-canada/,P3,
+New Zealand,Local city,hindi classes auckland,Commercial,Bottom,/hindi-classes-auckland/,P2,"Low volume, almost no specialist competition"
+New Zealand,Local city,hindi tutor auckland,Commercial,Bottom,/hindi-classes-auckland/,P2,"Low volume, almost no specialist competition"
+New Zealand,Local city,hindi classes wellington,Commercial,Bottom,/hindi-classes-wellington/,P3,"Low volume, almost no specialist competition"
+New Zealand,Local city,hindi classes near me,Commercial,Bottom,/hindi-classes-nz/,P3,"Low volume, almost no specialist competition"
+Ireland,Local city,hindi classes dublin,Commercial,Bottom,/hindi-classes-dublin/,P3,"Smallest market, test only"
+Ireland,Local city,hindi tutor dublin,Commercial,Bottom,/hindi-classes-dublin/,P3,"Smallest market, test only"
