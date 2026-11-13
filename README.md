@@ -8,7 +8,7 @@ Astro 7, static output; Tailwind CSS 4; TypeScript strict mode; `astro:assets` r
 
 ## Run
 
-Node 24 LTS is recommended (minimum 22.12).
+Node 24 LTS is recommended (minimum 22.23.4).
 
 ```sh
 npm ci

@@ -51,3 +51,18 @@ Recommended candidate: `HindiWithNeelam.com`. Alternatives: `LearnHindiWithNeela
 ## Current external blockers
 
 Read access to the existing GitHub repository works through the platform Git proxy, but the GitHub API returns Forbidden. This blocks creating a GitHub repository from this session; a present GH_TOKEN is not evidence of API permission. No Cloudflare credentials were requested because the user intends to upload the project. Neither GitHub publication nor a public Cloudflare deployment is claimed.
+
+## Requested GitHub-backed deployment: access prerequisites
+
+The requested deployment route is GitHub -> Cloudflare Pages (not a local direct upload). Intended new repository name: `HindiWithNeelam`; confirm the account's repository ownership through the authenticated GitHub API before creating it. Default new-repository visibility should be private.
+
+The currently enforced environment policy blocks `api.github.com` and `api.cloudflare.com`. Draft network requirements have been saved for these APIs, the Cloudflare dashboard/docs and the proposed `hindi-with-neelam.pages.dev` hostname. A proposed hostname is not proof it is available or already assigned.
+
+To enable the requested deployment from this session:
+
+- Save/apply the environment network settings.
+- Supply `CLOUDFLARE_API_TOKEN` securely through environment settings with Cloudflare Pages Edit permission for the intended account. Never paste the token into chat or commit it.
+- Supply the non-secret `CLOUDFLARE_ACCOUNT_ID` through environment settings.
+- Authorize Cloudflare's GitHub app for the new repository if it is not already connected. A Cloudflare API token alone does not grant access to a GitHub repository.
+
+Once available, verify API access, create/push the independent repository, create the Git-connected Pages project using main/npm run build/dist/Node 24, set SITE_URL to the actual assigned origin and verify the live deployment. Existing injected GitHub access should be reused before asking for any additional GitHub credential.
