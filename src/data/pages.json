@@ -777,7 +777,11 @@
       },
       {
         "title": "Corrections",
-        "body": "Send corrections to learnwithneelamy@gmail.com with the page URL and a description of the issue. Materials should be reviewed when the underlying information changes."
+        "body": "Include the page URL and a description of the issue when suggesting a correction. Materials should be reviewed when the underlying information changes.",
+        "action": {
+          "label": "Suggest a correction",
+          "href": "mailto:learnwithneelamy@gmail.com?subject=Website%20correction"
+        }
       }
     ],
     "heading": "Clear sources. Honest expectations.",
@@ -807,7 +811,11 @@
       },
       {
         "title": "Questions and requests",
-        "body": "Contact learnwithneelamy@gmail.com to ask about information you have shared, corrections or deletion. A parent or guardian should manage enquiries on behalf of children. Booking and cancellation terms will be agreed before a paid lesson."
+        "body": "You can ask about information you have shared, request a correction or ask for deletion. A parent or guardian should manage enquiries on behalf of children. Booking and cancellation terms will be agreed before a paid lesson.",
+        "action": {
+          "label": "Ask a privacy question",
+          "href": "mailto:learnwithneelamy@gmail.com?subject=Privacy%20request"
+        }
       }
     ],
     "heading": "A simple approach to privacy.",
@@ -833,7 +841,11 @@
       },
       {
         "title": "Tell us what needs improving",
-        "body": "If a page or tool is difficult to use, email learnwithneelamy@gmail.com with the page and the issue. This is a statement of the intended features, not a claim of formal accessibility certification."
+        "body": "If a page or tool is difficult to use, tell us which page you visited and what went wrong. This is a statement of the intended features, not a claim of formal accessibility certification.",
+        "action": {
+          "label": "Report an accessibility issue",
+          "href": "mailto:learnwithneelamy@gmail.com?subject=Accessibility%20feedback"
+        }
       }
     ],
     "heading": "A website you can use your way.",

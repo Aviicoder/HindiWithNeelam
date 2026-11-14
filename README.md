@@ -27,6 +27,10 @@ npm run test:browser
 
 Browser checks use `/usr/bin/chromium` when present, otherwise the Playwright browser. On a local machine without Chromium, run `npx playwright install chromium`. `CHROMIUM_PATH` can select an existing browser. The browser test writes screenshots and JSON results under ignored `test-results/` and does not send messages to anyone.
 
+## Localized landing pages
+
+French (France), Japanese (Japan), German (Germany), Spanish (Spain), and Dutch (Netherlands) landing pages are available at `/fr/`, `/ja/`, `/de/`, `/es/`, and `/nl/`. They share one template and spacing rules. Existing English guides are labelled when linked. See [localization](docs/06-localization.md) for content and verification guidance.
+
 ## Public deployment and indexing
 
 Read [Cloudflare Pages deployment](docs/03-cloudflare-pages.md). `SITE_URL` is a **build-time environment variable**, not a domain purchase or registration. Set it to the exact verified HTTPS origin. Supply it through your shell or Cloudflare build settings; the example file documents the value but is not automatically loaded by the configuration.

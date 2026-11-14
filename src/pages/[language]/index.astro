@@ -1,0 +1,10 @@
+---
+import LocalizedLanding from '../../components/LocalizedLanding.astro';
+import {localizedPages,type LandingCopy} from '../../data/localization';
+export function getStaticPaths(){
+ return Object.entries(localizedPages).map(([language,copy])=>({params:{language},props:{copy}}));
+}
+interface Props { copy:LandingCopy }
+const {copy}=Astro.props;
+---
+<LocalizedLanding copy={copy}/>

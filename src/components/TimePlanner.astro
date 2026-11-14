@@ -4,6 +4,7 @@ import { zones } from '../lib/time';
 <section class="tool-panel" aria-labelledby="planner-title"><p class="eyebrow">A DATE-AWARE TIME CHECK</p><h2 id="planner-title">Your local time → India time</h2><p class="form-hint">Choose a possible lesson time in your city. This tool checks the clock, not availability.</p>
 <form id="time-form"><div class="field"><label for="zone">Your city / time zone</label><select id="zone" name="zone">{zones.map(([city,zone])=><option value={zone}>{city}</option>)}</select></div><div class="field-grid"><div class="field"><label for="date">Your local date</label><input type="date" id="date" name="date" required/></div><div class="field"><label for="time">Your local time</label><input type="time" id="time" name="time" value="08:00" required/></div></div><button class="button" type="submit">Check India time <span aria-hidden="true"><svg class="arrow-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.5"/></svg></span></button></form>
 <div id="time-result" class="tool-result" role="status" aria-live="polite"></div>
+<p class="planner-next-step"><a class="text-link" href="/contact/">Ask Neelam about your preferred lesson time</a></p>
 <noscript><p>Enable JavaScript for the converter, or <a class="text-link" href="/contact/">send Neelam your city, date and preferred time</a>.</p></noscript></section>
 <script>
 import {localToInstants,indiaTime} from '../lib/time';

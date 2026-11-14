@@ -1,0 +1,18 @@
+---
+interface Props { compact?: boolean; labels?: {call:string;whatsapp:string;email:string}; message?:string }
+const { compact = false, labels = {call:'Call Neelam',whatsapp:'Chat on WhatsApp',email:'Email Neelam'}, message='Hello Neelam, I would like to enquire about Hindi lessons.' } = Astro.props;
+---
+<div class:list={['contact-links', { compact }]}>
+  <a href="tel:+919971055356"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m7 3 3 5-2 2a15 15 0 0 0 6 6l2-2 5 3-1 4C10 22 2 14 3 4Z" stroke-linejoin="round"/></svg><span>{labels.call}</span></a>
+  <a href={'https://wa.me/919971055356?text='+encodeURIComponent(message)} target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.5 11.5a9 9 0 0 1-13.3 7.9L3 21l1.5-4.3a9 9 0 1 1 16-5.2Z" stroke-linejoin="round"/><path d="m8 7 2 3-1 1c1 2 2 3 4 4l1-1 3 2c-1 3-4 2-7-1s-4-6-2-8Z" stroke-linejoin="round"/></svg><span>{labels.whatsapp}</span></a>
+  <a href="mailto:learnwithneelamy@gmail.com"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>{labels.email}</span></a>
+</div>
+<style>
+.contact-links{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:20px;font-size:.8rem;line-height:1.5}
+.contact-links a{display:inline-flex;align-items:center;gap:8px;min-height:44px;max-width:100%;color:inherit;text-decoration:underline;text-underline-offset:4px}
+.contact-links a:hover{text-decoration-thickness:2px}
+.contact-links svg{width:20px;height:20px;flex-shrink:0}
+.contact-links span{overflow-wrap:anywhere;min-width:0}
+.compact{margin-top:0;font-size:.75rem}
+@media print{.contact-links{display:none}}
+</style>

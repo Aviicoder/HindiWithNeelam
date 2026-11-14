@@ -1,6 +1,6 @@
 import source from './pages.json';
 export interface City { name:string; zone:string; path:string; note:string; anchor:string }
-export interface Page { slug:string; title:string; description:string; eyebrow:string; lead:string; heading:string; sections:{title:string;body:string}[]; kind?:string; strap?:string; related:string[]; cities?:City[]; city?:string; zone?:string; parent?:string; locale?:string }
+export interface Page { slug:string; title:string; description:string; eyebrow:string; lead:string; heading:string; sections:{title:string;body:string;action?:{label:string;href:string}}[]; kind?:string; strap?:string; related:string[]; cities?:City[]; city?:string; zone?:string; parent?:string; locale?:string }
 export const pages = source as Page[];
 export const findPage = (slug:string) => pages.find(page=>page.slug===slug);
 export const href = (slug:string) => `/${slug}/`;
